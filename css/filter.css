@@ -1,0 +1,179 @@
+html {
+    background-color: white;
+    height: 1050px;
+}
+
+/*filter content title text*/
+h4 {
+    font-size: 1.2em;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*tag texts*/
+h5 {
+    font-size: 0.9em;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*filter content button text heading*/
+.filterDropBtn h4 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding-left: 5%;
+    margin: auto;
+}
+
+/*main container holding all filter contents*/
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+/*main container of dropdown button*/
+.filterDropBtn {
+    background-color: #E24E26;
+    width: 256px;
+    height: 52px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+#arrow_img {
+    position: relative;
+    width: 6%;
+    float: right;
+    padding-right: 5%;
+    margin-top: -13px;
+    /*transform: rotate(270deg);*/
+}
+
+/*main container holding filter tags*/
+#filter {
+    /*display: none;*/
+    width: 256px;
+    height: 380px;
+    padding-top: 8%;
+    text-align: center;
+    background-color: white;
+    border-radius: 0px 0px 3px 3px;
+    box-shadow: 0;
+    position:relative;
+    box-shadow: 0px 4px 4px 0px #dbdbdb;
+
+    
+}
+
+/*main button for tags*/
+.button {
+    position: relative;
+    background-color: #F3B69E;
+    color: rgb(255, 255, 255);
+    height: 32px;
+    padding: 0% 3% 0% 3%;
+    margin-left: 8%;
+    margin-right:10%;
+    margin-bottom: 5%;
+    font-size: 14px;
+    float: left;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0px 4px 6px 0px #e8e8e8;
+
+}
+
+
+/*doesnt stay selected if clicked outside of element*/
+.button:focus{
+    background-color: #E24E26;
+}
+
+
+/*container holding relevant content to the tag chosen*/
+.filterTag {
+    position: absolute;
+    background-color: #2196F3;
+    padding: 2%;
+    color: #ffffff;
+    height: 80px;
+    line-height: 100px;
+    text-align: center;
+    margin-left: 50%;
+    display: none;  /*Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+
+
+
+
+
+  .wrapper3
+  .arrow_img
+    transform: rotate(0)
+    left: 0
+    &:before, &:after
+      background-color: transparent
+      width: 3px
+      height: 10px
+      display: inline-block
+      position: absolute
+      border-bottom: 12px solid white
+      top: 0
+      left: 0
+      transform: rotate(0)
+    &:before
+      transform: rotate(-135deg)
+    &:after 
+      transform: rotate(135deg)
+      
+  &.active
+    .arrow
+      transform: rotate(0)
+      transform: translate(0, -6px)
+      &:before
+        transform: rotate(-45deg)
+      &:after
+        transform: rotate(45deg)
+      
+  
+
+.arrow_img
+  width: 13px
+  height: 13px
+  display: inline-block
+  position: relative
+  bottom: -5px
+  left: -10px
+  transition: 0.4s ease
+  margin-top: 2px
+  text-align: left
+  transform: rotate(45deg)
+  float: right
+  &:before, &:after
+    position: absolute
+    content: ''
+    display: inline-block
+    width: 12px
+    height: 3px
+    background-color: #fff
+    transition: 0.4s ease
+  &:after
+    position: absolute
+    transform: rotate(90deg)
+    top: -5px
+    left: 5px
+  

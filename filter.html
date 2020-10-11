@@ -1,0 +1,55 @@
+<!--Page to test filter system-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Stylesheet-->
+	<link rel="stylesheet" href="css/filter.css">
+        <!--JS-->
+        <script src="js/javascript.js"></script>
+		
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Filter</title>
+</head>
+
+
+
+
+
+    <body>
+
+        <!--Start of filter system code-->
+        <div class="dropdown">
+                  <!--Filter Content button-->
+                 <button class="filterDropBtn" onclick="filter_btn()"><h4>Filter Content</h4>
+                     <!--Dropdown arrow-->
+                    <img id="arrow_img" src="images/drop_down_arrow.svg"  alt="dropdown arrow">
+                </button>
+                
+        <!--Main container holding tags-->
+            <div id="filter">
+                <button class="button" onclick="filterSelection('agile')">Agile</button>
+                <button class="button button2" onclick="filterSelection('infoArchi')">Information Architecture</button>
+                <button class="button button3" onclick="filterSelection('interactionDes')">Interaction Design</button>
+                <button class="button button4" onclick="filterSelection('prototyping')">Prototyping</button>
+                <button class="button button5" onclick="filterSelection('userExp')">User Experience</button>
+                <button class="button button6" onclick="filterSelection('userTesting')">User Testing</button>
+            </div>
+        </div>
+
+        <!--Divs and content filtered out by chosen tags-->
+        <div class="container">
+            <div class="filterTag agile">Article: What is Agile?</div>
+            <div class="filterTag infoArchi">Article: What is Information Architecture?</div>
+            <div class="filterTag interactionDes">Article: What is Interaction Design?</div>
+            <div class="filterTag prototyping">Article: What is Prototyping?</div>
+            <div class="filterTag userExp">Article: What is User Experience?</div>
+            <div class="filterTag userTesting">Article: What is User Testing?</div>
+    </body>
+</html>
+
+
+
+    
+    
