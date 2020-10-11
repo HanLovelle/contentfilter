@@ -57,7 +57,7 @@ h5 {
 
 /*main container holding filter tags*/
 #filter {
-    /*display: none;*/
+    /* display: none; */
     width: 256px;
     height: 380px;
     padding-top: 8%;
@@ -97,17 +97,18 @@ h5 {
     background-color: #E24E26;
 }
 
+.selected{
+  background-color: #E24E26;
+}
 
 /*container holding relevant content to the tag chosen*/
 .filterTag {
-    position: absolute;
     background-color: #2196F3;
-    padding: 2%;
     color: #ffffff;
+    margin: 5px;
     height: 80px;
     line-height: 100px;
     text-align: center;
-    margin-left: 50%;
     display: none;  /*Hidden by default */
   }
   
@@ -116,7 +117,12 @@ h5 {
     display: block;
   }
   
-
+.container{
+  position: absolute;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+}
 
 
 

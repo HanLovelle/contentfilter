@@ -22,19 +22,19 @@
         <!--Start of filter system code-->
         <div class="dropdown">
                   <!--Filter Content button-->
-                 <button class="filterDropBtn" onclick="filter_btn()"><h4>Filter Content</h4>
+                 <button class="filterDropBtn" onclick="filterBtn()"><h4>Filter Content</h4>
                      <!--Dropdown arrow-->
                     <img id="arrow_img" src="images/drop_down_arrow.svg"  alt="dropdown arrow">
                 </button>
                 
         <!--Main container holding tags-->
             <div id="filter">
-                <button class="button" onclick="filterSelection('agile')">Agile</button>
-                <button class="button button2" onclick="filterSelection('infoArchi')">Information Architecture</button>
-                <button class="button button3" onclick="filterSelection('interactionDes')">Interaction Design</button>
-                <button class="button button4" onclick="filterSelection('prototyping')">Prototyping</button>
-                <button class="button button5" onclick="filterSelection('userExp')">User Experience</button>
-                <button class="button button6" onclick="filterSelection('userTesting')">User Testing</button>
+                <button id="agile" class="button" onclick="filterSelection(this.id)">Agile</button>
+                <button id="infoArchi" class="button button2" onclick="filterSelection(this.id)">Information Architecture</button>
+                <button id="interactionDes" class="button button3" onclick="filterSelection(this.id)">Interaction Design</button>
+                <button id="prototyping" class="button button4" onclick="filterSelection(this.id)">Prototyping</button>
+                <button id="userExp" class="button button5" onclick="filterSelection(this.id)">User Experience</button>
+                <button id="userTesting" class="button button6" onclick="filterSelection(this.id)">User Testing</button>
             </div>
         </div>
 
@@ -48,8 +48,3 @@
             <div class="filterTag userTesting">Article: What is User Testing?</div>
     </body>
 </html>
-
-
-
-    
-    
